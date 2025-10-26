@@ -1,0 +1,13 @@
+command = /usr/bin/fish
+background-opacity = 0.9
+background-blur = true
+theme = GitHub Dark Dimmed
+gtk-tabs-location = bottom
+window-theme = system
+gtk-titlebar = false
+gtk-wide-tabs = false
+confirm-close-surface = false
+shell-integration = fish
+gtk-single-instance = true
+window-inherit-working-directory = false
+working-directory = home
