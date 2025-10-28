@@ -7,9 +7,12 @@ left = [ [ "Workspaces" ] ]
 center = [ [ "Clock", "Updates" ] ]
 right = [ "SystemInfo", [  "Tray", "Privacy", "Settings" ] ]
 
+[clock]
+format =  "%A, %b %d – %T"
+
 [updates]
 check_cmd = "checkupdates; yay -Qua"
-update_cmd = 'ghostty -e fish -c "yay; echo Done - Press enter to exit; read" &'
+update_cmd = 'ghostty -e fish -c "if yay; echo ✅ Done! Press Enter to exit; else; echo ❌ yay failed! Press Enter to exit; end; read"'
 
 [workspaces]
 visibility_mode = "MonitorSpecific"
